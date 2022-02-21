@@ -25,6 +25,7 @@ int main(int argc, char** argv) {
 
     puts("UVC initialized");
 
+    puts("UVC initialized");
     uvc_device** device_list;
     res = uvc_get_device_list(ctx, &device_list);
     printf("uvc_get_device_list() Status : %d\n", res);

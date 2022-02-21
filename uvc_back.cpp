@@ -107,7 +107,6 @@ void IR_Capture::_start(uvc_device_t* devv, int width, int height, int fps)
 	err = uvc_stream_start(strmh, NULL, NULL, bandwidth_factor, 0);
 	if (err < 0) printf("uvc_stream_start error %d\n", err);
 	_stream_on = 1;
-	//_enumerate_formats();
 
 	std::cout << "Stream start." << std::endl;
 }
